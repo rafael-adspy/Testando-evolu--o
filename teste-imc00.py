@@ -1,4 +1,5 @@
 from time import sleep
+print(f'{"Tabela IMC":=^40}')
 sleep(1)
 print('-='*20)
 s = input('Diga seu sexo: H / M: ').upper()
