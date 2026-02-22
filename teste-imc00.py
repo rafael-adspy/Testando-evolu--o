@@ -10,7 +10,7 @@ print('PROCESSANDO...')
 sleep(2)
 imc = p / (a*a)
 hcond = (72.7 * a) - 58
-mcond = (62.1*a)-44.7
+mcond = (62.1*a) - 44.7
 hdif = p - hcond
 mdif = p - mcond
 print(f'Seu imc é: {imc:.2f}')
