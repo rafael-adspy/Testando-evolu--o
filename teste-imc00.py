@@ -1,9 +1,9 @@
 from time import sleep
-print(f'{"Tabela IMC":=^40}')
+print('='*40)
+print('       CALCULADORA DE IMC')
+print('='*40)
 sleep(1)
-print('-='*20)
 s = input('Diga seu sexo: H / M: ').upper()
-i = int(input('Digite sua idade: '))
 a = float(input('Qual é sua altura: '))
 p = float(input('Qual é seu peso: '))
 print('PROCESSANDO...')
@@ -32,7 +32,7 @@ if s == 'H':
     if p > hcond:
         print(f'Você está {hdif:.2f} kg acima do seu peso ideal')
     elif p < hcond:
-        print(f'Você está {hdif:.2f} kg abaixo do seu peso ideal')
+        print(f'Você está {abs(hdif):.2f} kg abaixo do seu peso ideal')
     else:
         print('PARABÉNS!!!!, você está no peso padrão')
 elif s == 'M':
@@ -41,7 +41,7 @@ elif s == 'M':
     if p > mcond:
         print(f'Você está {mdif:.2f} kg acima seu peso ideal')
     elif p < mcond:
-        print(f'Você esta {mdif:.2f} kg abaixo do seu peso ideal')
+        print(f'Você está {abs(mdif):.2f} kg abaixo do seu peso ideal')
     else:
         print('PARABÉNS!!!!, você está no peso padrão')
 
